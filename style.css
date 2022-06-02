@@ -709,6 +709,13 @@ h2 {
     line-height: 1.4em;
 }
 
+h2.agence-titre {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333333!important;
+}
+
 h3 {
     font-size: 15px;
     text-transform: uppercase;
@@ -775,7 +782,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFF!important;
 }
 
 .btn-atomic-tangerine {
@@ -813,10 +820,6 @@ h4 {
     background-image: url("img/dots-bg.png");
 }
 
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-}
-
 .bg-banniere {
     background-image: url("img/agence-la-panthere.jpg");
 }
@@ -848,13 +851,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -872,10 +875,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+  /*   safe-area-inset n'est pas une valeur valide pour le padding */
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -884,8 +884,7 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+       /*  safe-area-inset n'est pas une valeur valide pour le padding */
     }
 }
 
@@ -1039,4 +1038,30 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+.agence-descrip {
+    font-size: 22px;
+    padding: 0 150px;
+    font-family: Arial;
+}
+
+.agence-realisation {
+    font-size: 22px;
+    padding: 0 280px;
+    font-family: Arial;
+}
+
+.agence-citation {
+    font-size: 18px;
+    padding: 0 60px;
+    font-family: arial;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.agence-auteur {
+    font-size: 20px;
+    padding: 0 60px;
+    font-family: arial;
 }
