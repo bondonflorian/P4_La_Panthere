@@ -516,7 +516,7 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+    /* L'opacité de la flêche était à 0. Celui-ci ne s'afficher pas. */
     z-index: 500;
     transition: all .3s ease-in-out;
 }
